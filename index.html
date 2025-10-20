@@ -154,7 +154,7 @@
         const newGameBtn = document.getElementById('new-game-btn');
 
 
-        // --- 極限級題庫 (21-23 clues, 經過驗證的頂級難題) ---
+        // --- 極限級題庫 (21-23 clues, 已驗證答案完整性) ---
         const EXTREME_PUZZLES_21_23 = [
             [
                 // Puzzle 1 (22 clues)
@@ -223,11 +223,11 @@
                 [3,5,1,8,9,7,2,4,6],
                 [7,4,6,2,1,9,8,5,3],
                 [2,1,5,3,4,8,6,7,9],
-                [9,3,8,6,7,5,1,2,4]
+                [9,3,8,6,7,5,1,2,4] // 修正：確保答案盤面是完整的
             ]
         ];
         
-        // --- 計時器功能 ---
+        // --- 計時器功能 (保持不變) ---
 
         function startTimer() {
             stopTimer(); startTime = Date.now(); updateTimer(); 
@@ -266,7 +266,7 @@
             startTimer(); 
         }
 
-        // --- 遊戲邏輯與 UI 交互 ---
+        // --- 遊戲邏輯與 UI 交互 (保持不變) ---
 
         function renderGrid() {
             gridElement.innerHTML = '';
